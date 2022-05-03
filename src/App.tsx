@@ -1,12 +1,14 @@
 /**
  * This file defines the root of the development application.
  */
-import { StrictMode } from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { setup } from "goober";
 import Component from "./Component";
 
-const container = document.getElementById("root") as HTMLElement;
+setup(React.createElement);
 
+const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
 
 root.render(

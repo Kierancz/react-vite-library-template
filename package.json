@@ -1,6 +1,9 @@
 {
   "name": "react-package",
   "version": "0.0.0",
+  "main": "dist/my-lib.umd.js",
+  "module": "dist/my-lib.es.js",
+  "files": ["dist"],
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -18,8 +21,10 @@
     "!(*yarn-lock).yaml": "prettier --write"
   },
   "dependencies": {
+    "goober": "^2.1.8",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-use": "^17.3.2"
   },
   "devDependencies": {
     "@0x219/commitlint-config": "1.0.2",
